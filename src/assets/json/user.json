@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "init": 1,
+        "username": "wanghao",
+        "realname": "王浩",
+        "character": "",
+        "userId": "",
+        "addTime": "",
+        "avatar": "",
+        "token": "",
+        "router": "Gentleman",
+        "fullPath": "/gentleman"
+    },
+    {
+        "id": 2,
+        "init": 1,
+        "username": "wangtingting",
+        "realname": "王婷婷",
+        "character": "",
+        "userId": "",
+        "addTime": "",
+        "avatar": "",
+        "token": "",
+        "router": "AbleWoman",
+        "fullPath": "/ablewoman"
+    },
+    {
+        "id": 3,
+        "init": 1,
+        "username": "zhangfangfang",
+        "realname": "张芳芳",
+        "character": "",
+        "userId": "",
+        "addTime": "",
+        "avatar": "",
+        "token": "",
+        "router": "LovelyWoman",
+        "fullPath": "/lovelywoman"
+    },
+    {
+        "id": 4,
+        "init": 999,
+        "username": "template",
+        "realname": "模板",
+        "character": "",
+        "userId": "",
+        "addTime": "",
+        "avatar": "",
+        "token": "",
+        "router": "template",
+        "fullPath": "/template"
+    }
+]

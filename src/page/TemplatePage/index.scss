@@ -1,0 +1,114 @@
+.home_banner {
+  width: 100%;
+  height: calc(100vh - 10px);
+  background-color: #49b1f5;
+  opacity: 0.9;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff !important;
+  animation: header-effect 1s;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    color: hsla(360, 45%, 95%, 0.9);
+    box-shadow: hsla(0, 45%, 5%, 0.3) 0 0 1px,
+      hsla(360, 55%, 95%, 0.3) 0 -1px 2px, hsla(0, 45%, 5%, 0.3) 0 -1px 2px,
+      hsla(360, 55%, 95%, 0.3) 0 20px 15px;
+    border-radius: 50%;
+    transition: all 2s;
+  }
+
+  img:hover {
+    transform: scale(1.6);
+    -webkit-transform: scale(1.6); /*兼容-webkit-引擎浏览器*/
+    -moz-transform: scale(1.6); /*兼容-moz-引擎浏览器*/
+  }
+}
+
+.home_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  .main {
+    flex: 1;
+    min-height: 1200px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s;
+    padding: 24px;
+    box-shadow: 0 4px 8px 6px rgba(7, 17, 27, 0.2);
+    margin-right: 24px;
+    margin-bottom: 48px;
+    opacity: 0.5;
+  }
+
+  .side_nav_bar {
+    width: 250px;
+
+    .side_nav_info {
+      width: 100%;
+      height: 280px;
+      background: #fff;
+      border-radius: 8px;
+      transition: all 0.3s;
+      padding: 24px;
+      box-shadow: 0 4px 8px 6px rgba(7, 17, 27, 0.06);
+
+      .photo {
+        height: 200px;
+        border-radius: 50%;
+      }
+    }
+
+    .side_nav_info:hover {
+      box-shadow: 0 4px 12px 12px rgba(7, 17, 27, 0.15);
+    }
+
+    .collection_btn {
+      text-align: center;
+      z-index: 1;
+      font-size: 14px;
+      position: relative;
+      display: block;
+      background-color: #49b1f5;
+      color: #fff !important;
+      height: 32px;
+      line-height: 32px;
+      transition-duration: 1s;
+      transition-property: color;
+    }
+
+    .collection_btn:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: #ff7242;
+      content: "";
+      transition-timing-function: ease-out;
+      transition-duration: 0.5s;
+      transition-property: transform;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+    }
+    .collection_btn:hover:before {
+      transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+      transform: scaleX(1);
+    }
+  }
+}
+
+.return {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  z-index: 10;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
